@@ -13,7 +13,7 @@ import tdmathtoolscore.generadortriangulosgeometriaanalitca.*;
  */
 public class TesterGeneradorTriangulosGeometriaAnalitica {
     public static void main(String [] args){
-        Item i= new Item(-3,2,130);
+        Item i= new Item(-3,2,45,5,6);
         System.out.println(i.toString());
     }
     
