@@ -17,16 +17,21 @@ public class Item {
     private final int _theta;
     
     public double getM1(){
-        return tan(_theta);
+        return tan(_theta*PI/180);
     }
     
     public double getTheta(){
-        return atan(getM1());
+        return atan(getM1())*180/PI+(getM1()<0?180:0);
     }
     public Item(int xp, int yp,int theta){
         _xp=xp;
         _yp=yp;
         _theta=theta;
     }
-            
+      
+    @Override
+    public String toString(){
+        return "El primer punto es ("+_xp+","+_yp+") y el primer lado tendrá una"
+                + " inclinación de "+getTheta()+"°";
+    }
 }

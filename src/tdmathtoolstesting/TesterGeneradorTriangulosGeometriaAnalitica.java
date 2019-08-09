@@ -5,13 +5,16 @@
  */
 package tdmathtoolstesting;
 
+import tdmathtoolscore.generadortriangulosgeometriaanalitca.*;
+
 /**
  *
  * @author Víctor Daniel
  */
 public class TesterGeneradorTriangulosGeometriaAnalitica {
     public static void main(String [] args){
-        
+        Item i= new Item(-3,2,130);
+        System.out.println(i.toString());
     }
     
 }
